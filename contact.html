@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Brightview Hospital - Contact</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVIGATION PANE -->
+  <nav class="navbar">
+    <div class="logo">🏥 Brightview General Hospital</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- PAGE BANNER -->
+  <div class="page-banner">
+    <h1>Contact Us</h1>
+    <p>We are always here to help you</p>
+  </div>
+
+  <main class="container">
+    <div class="contact-wrapper">
+
+      <!-- LEFT: CONTACT DETAILS -->
+      <section class="contact-details">
+        <h2>Get In Touch</h2>
+
+        <div class="contact-item">
+          <span class="c-icon">📬</span>
+          <div>
+            <strong>Post Office Box</strong>
+            <p>P.O. Box 1234 – 00100, Central City</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="c-icon">📧</span>
+          <div>
+            <strong>Email</strong>
+            <p>
+              <a href="mailto:info@brightviewhospital.org">
+                info@brightviewhospital.org
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="c-icon">📍</span>
+          <div>
+            <strong>Physical Location</strong>
+            <p>2nd Avenue, City Centre,<br/>Opposite Central Park, Central City</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <span class="c-icon">🌐</span>
+          <div>
+            <strong>Social Media</strong>
+            <div class="social-links">
+              <a href="https://www.facebook.com/brightviewhospital"
+                 target="_blank" class="social-btn fb">Facebook</a>
+              <a href="https://www.twitter.com/brightviewhosp"
+                 target="_blank" class="social-btn tw">Twitter / X</a>
+              <a href="https://www.instagram.com/brightviewhospital"
+                 target="_blank" class="social-btn ig">Instagram</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- RIGHT: CONTACT FORM (uses Formspree — works without JS) -->
+      <section class="contact-form-section">
+        <h2>Send Us a Message</h2>
+        <form
+          action="https://formspree.io/f/xreanvqy"
+          method="POST"
+          class="contact-form"
+        >
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input
+              type="text" id="name" name="name"
+              placeholder="Enter your full name" required />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input
+              type="email" id="email" name="email"
+              placeholder="Enter your email address" required />
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input
+              type="tel" id="phone" name="phone"
+              placeholder="e.g. +254 700 000 000" />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input
+              type="text" id="subject" name="subject"
+              placeholder="What is this about?" required />
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea
+              id="message" name="message" rows="5"
+              placeholder="Type your message here..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit">Send Message ✉️</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>&copy; 2026 Brightview General Hospital. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
